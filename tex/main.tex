@@ -1,0 +1,35 @@
+\documentclass[11 pt]{article}
+
+\input{~/org/latex-headers/base.tex}
+
+
+\begin{document}
+    Newton's second law of motion:
+    \begin{align*}
+        \vec F=\begin{pmatrix}F_x \\ F_y \\ F_z \end{pmatrix} 
+        &=\deriv{\vec p}{t} \\
+        &=\deriv{}{t}(m\vec v) \\
+        &=\deriv{m}{t}\vec v+m\deriv{\vec v}{t} \\
+        &=m\vec a    
+    \end{align*}
+    Nabla operator:
+    \begin{align*}
+        \nabla:
+        &=\begin{pmatrix}\del_x \\ \del_y \\ \del_z \end{pmatrix}
+        =\begin{pmatrix}\pderiv{}{x} \\ \pderiv{}{y} \\ \pderiv{}{z} \end{pmatrix} \\
+    \end{align*}
+    Navier-Stokes equations:
+    \begin{align*}
+        \frac{\vec F}{V}
+        &=\frac{m}{V}\vec a \\
+        &=\rho\vec a \\
+        &=\rho\frac{\text D}{\text Dt}\vec v \\
+        &=\rho\bigg(\frac{\del}{\del t}+\vec\nabla\bigg)\vec v \\
+        &=-\nabla p+\mu\Delta\vec v+\rho\vec F
+    \end{align*}
+    Conservation of mass:
+    \begin{align*}
+        \nabla\vec v=0 
+    \end{align*}
+
+\end{document}
